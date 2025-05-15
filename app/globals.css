@@ -1,0 +1,486 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Black */
+@font-face {
+  font-family: 'Freigeist';
+  src: url('/fonts/freigeist-black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist';
+  src: url('/fonts/freigeist-blackitalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Freigeist';
+  src: url('/fonts/freigeist-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist';
+  src: url('/fonts/freigeist-bolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Condensed Black */
+@font-face {
+  font-family: 'Freigeist Condensed';
+  src: url('/fonts/freigeist-conblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist Condensed';
+  src: url('/fonts/freigeist-conblackitalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Condensed Bold */
+@font-face {
+  font-family: 'Freigeist Condensed';
+  src: url('/fonts/freigeist-conbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist Condensed';
+  src: url('/fonts/freigeist-conbolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Light */
+@font-face {
+  font-family: 'Freigeist';
+  src: url('/fonts/freigeist-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist';
+  src: url('/fonts/freigeist-lightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Freigeist';
+  src: url('/fonts/freigeist-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist';
+  src: url('/fonts/freigeist-mediumitalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Freigeist';
+  src: url('/fonts/freigeist-conregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist';
+  src: url('/fonts/freigeist-regularitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Thin */
+@font-face {
+  font-family: 'Freigeist';
+  src: url('/fonts/freigeist-thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist';
+  src: url('/fonts/freigeist-thinitalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Wide Black */
+@font-face {
+  font-family: 'Freigeist Wide';
+  src: url('/fonts/freigeist-wideblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Wide Bold */
+@font-face {
+  font-family: 'Freigeist Wide';
+  src: url('/fonts/freigeist-widebold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist Wide';
+  src: url('/fonts/freigeist-widebolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+/* Wide Light */
+@font-face {
+  font-family: 'Freigeist Wide';
+  src: url('/fonts/freigeist-widelight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist Wide';
+  src: url('/fonts/freigeist-widelightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Wide Medium */
+@font-face {
+  font-family: 'Freigeist Wide';
+  src: url('/fonts/freigeist-widemedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist Wide';
+  src: url('/fonts/freigeist-widemediumitalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Wide Regular */
+@font-face {
+  font-family: 'Freigeist Wide';
+  src: url('/fonts/freigeist-wideregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist Wide';
+  src: url('/fonts/freigeist-wideregularitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Wide Thin */
+@font-face {
+  font-family: 'Freigeist Wide';
+  src: url('/fonts/freigeist-widethin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist Wide';
+  src: url('/fonts/freigeist-widethinitalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* XCon Black */
+@font-face {
+  font-family: 'Freigeist XCon';
+  src: url('/fonts/freigeist-xconblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist XCon';
+  src: url('/fonts/freigeist-xconblackitalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* XCon Bold */
+@font-face {
+  font-family: 'Freigeist XCon';
+  src: url('/fonts/freigeist-xconbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist XCon';
+  src: url('/fonts/freigeist-xconbolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* XCon Light */
+@font-face {
+  font-family: 'Freigeist XCon';
+  src: url('/fonts/freigeist-xconlight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist XCon';
+  src: url('/fonts/freigeist-xconlightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* XCon Medium */
+@font-face {
+  font-family: 'Freigeist XCon';
+  src: url('/fonts/freigeist-xconmedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist XCon';
+  src: url('/fonts/freigeist-xconmediumitalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* XCon Regular */
+@font-face {
+  font-family: 'Freigeist XCon';
+  src: url('/fonts/freigeist-xconregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist XCon';
+  src: url('/fonts/freigeist-xconregularitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* XCon Thin */
+@font-face {
+  font-family: 'Freigeist XCon';
+  src: url('/fonts/freigeist-xconthin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist XCon';
+  src: url('/fonts/freigeist-xconthinitalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* XWide Black */
+@font-face {
+  font-family: 'Freigeist XWide';
+  src: url('/fonts/freigeist-xwideblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* XWide Bold */
+@font-face {
+  font-family: 'Freigeist XWide';
+  src: url('/fonts/freigeist-xwidebold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist XWide';
+  src: url('/fonts/freigeist-xwidebolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* XWide Light */
+@font-face {
+  font-family: 'Freigeist XWide';
+  src: url('/fonts/freigeist-xwidelight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist XWide';
+  src: url('/fonts/freigeist-xwidelightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* XWide Medium */
+@font-face {
+  font-family: 'Freigeist XWide';
+  src: url('/fonts/freigeist-xwidemedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist XWide';
+  src: url('/fonts/freigeist-xwidemediumitalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+*{
+  font-family: 'Freigeist';
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  overflow: hidden;
+  user-select: none;
+  background-color: black;
+  min-height: 100vh;
+  height: -webkit-fill-available;
+}
+/* @supports (-webkit-touch-callout: none) {
+  body {
+    height: -webkit-fill-available;
+  }
+} */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.ring-border {
+  opacity: 33%;
+  box-shadow: inset 0px 0px 60px 40px #6200FF;
+}
+
+.no-drag{
+ 
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.oscillator {
+  animation: oscillating 2s linear infinite;
+
+}
+
+@keyframes oscillating {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.absolute_center{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orb_styling {
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 700px;
+  max-height: 700px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  aspect-ratio: 1 / 1;
+}
+
+.orb_styling > * {
+  flex-shrink: 0; /* Ensures children don’t shrink */
+}

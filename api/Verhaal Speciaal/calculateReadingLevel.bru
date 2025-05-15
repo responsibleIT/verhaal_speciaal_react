@@ -1,0 +1,22 @@
+meta {
+  name: calculateReadingLevel
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://verhaalspeciaalapi.responsible-it.nl/calculateReadingLevel
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+   "originalText": "Dit is de originele zin die moet worden voorgelezen",
+   "spokenText": "Dit is de zin die is voorgelezen door het kind"
+  }
+}

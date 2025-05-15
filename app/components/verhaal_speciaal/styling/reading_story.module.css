@@ -1,0 +1,13 @@
+.act-finished{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: close-out 3s forwards ease-out;
+}
+@keyframes close-out {
+    from{
+        clip-path: circle(150%);
+    }
+    to{
+        clip-path: circle(0%);
+    }
+}

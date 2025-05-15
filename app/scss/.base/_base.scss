@@ -1,0 +1,19 @@
+/* https://tailwindcss.com/docs/functions-and-directives#directives */
+@layer base {
+  html {
+    @apply scroll-smooth text-primary-text;
+  }
+
+  body,
+  html {
+    @apply min-h-screen max-w-full;
+  }
+
+  body {
+    @apply relative font-primary text-base;
+  }
+
+  ::selection {
+    @apply bg-gray-500 text-secondary-text;
+  }
+}

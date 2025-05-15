@@ -1,0 +1,7 @@
+.o-location {
+  .m-map {
+    iframe {
+      @apply absolute inset-0 h-full w-full object-cover;
+    }
+  }
+}

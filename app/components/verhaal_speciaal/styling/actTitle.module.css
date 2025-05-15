@@ -1,0 +1,15 @@
+.fadeAnimation{
+    animation: fade 4s linear;
+    opacity: 0;
+}
+@keyframes fade {
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

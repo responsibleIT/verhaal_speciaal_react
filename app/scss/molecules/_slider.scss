@@ -1,0 +1,59 @@
+.m-card-slider {
+  &.small {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          @apply md:w-1/3 xl:w-1/4;
+        }
+      }
+    }
+  }
+  &.big {
+    .swiper {
+      .swiper-wrapper {
+        @apply pb-14;
+        .swiper-slide {
+          @apply md:w-1/3;
+        }
+      }
+    }
+  }
+}
+
+.m-image-slider {
+  .swiper {
+    .swiper-wrapper {
+      @apply pb-[58px];
+    }
+  }
+}
+
+.swiper {
+  &.swiper-horizontal {
+    @apply overflow-visible;
+    .swiper-pagination {
+      @apply bottom-0;
+      .swiper-pagination-bullet {
+        @apply mx-[5px] my-5 h-2.5 w-2.5 border border-gray-600 bg-transparent opacity-100;
+        &.swiper-pagination-bullet-active {
+          @apply bg-gray-600;
+        }
+      }
+    }
+  }
+  .swiper-scrollbar {
+    @apply bg-secondary-background;
+
+    &.swiper-scrollbar-horizontal {
+      @apply h-[5px] md:left-1/2 md:w-1/2 md:-translate-x-[50%];
+    }
+  }
+  .swiper-wrapper {
+    .swiper-slide {
+      @apply w-full;
+    }
+  }
+  .swiper-scrollbar-drag {
+    @apply bg-gray-600;
+  }
+}

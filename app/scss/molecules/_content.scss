@@ -1,0 +1,23 @@
+.m-content {
+  ol,
+  ul {
+    @apply mb-5;
+  }
+  a {
+    @apply underline;
+  }
+  strong {
+    font-weight: 700;
+  }
+  iframe {
+    @apply mb-5;
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+  }
+  img {
+    @apply mb-5;
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,30 @@
+@layer base {
+  ul {
+    @apply mb-4 mt-2.5;
+
+    &.list-checks {
+      li {
+        @apply before relative pl-8 before:absolute before:left-0 before:top-[5px] before:block before:h-[14px] before:w-[18px] before:bg-contain before:bg-center before:bg-no-repeat before:align-middle before:content-[''];
+
+        &::before {
+          //background-image: url('../../assets/images/icons/icon_checkmark.svg');
+        }
+      }
+    }
+  }
+}
+
+.m-content {
+  ol {
+    @apply list-decimal;
+  }
+  ul {
+    @apply list-disc;
+  }
+  ol,
+  ul {
+    //make sure the lines of the li are aligned on the left & add padding to left to align with content
+    list-style-position: outside;
+    padding-left: 1.25rem;
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "name": "fonk_boilerplate",
+  "name": "verhaalspeciaal",
   "version": "1.0.0",
   "engines": {
     "node": ">=18",
     "npm": ">=9"
   },
-  "description": "Fonk Boilerplate",
+  "description": "Verhaal Speciaal",
   "main": "index.js",
   "scripts": {
     "dev": "next dev -p 3010",
@@ -41,6 +41,7 @@
     "i": "^0.3.7",
     "lodash": "^4.17.21",
     "matter-js": "^0.20.0",
+    "mongodb": "^6.16.0",
     "next": "^14.2.3",
     "npm": "^10.8.0",
     "openai": "^4.73.1",
@@ -62,6 +63,7 @@
     "@storybook/react": "^8.1.4",
     "@types/lodash": "^4.17.13",
     "@types/matter-js": "^0.19.7",
+    "@types/mongodb": "^4.0.7",
     "@types/node": "^20.12.12",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

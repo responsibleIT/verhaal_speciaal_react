@@ -1,0 +1,7 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/onboarding/page": "app/onboarding/page.js",
+  "/confirmation/page": "app/confirmation/page.js",
+  "/api/generate-story/route": "app/api/generate-story/route.js",
+  "/storyline/page": "app/storyline/page.js"
+}

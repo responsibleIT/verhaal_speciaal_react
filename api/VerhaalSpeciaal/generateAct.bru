@@ -1,0 +1,40 @@
+meta {
+  name: generateAct
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://verhaalspeciaalapi.responsible-it.nl/generateAct
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "characters": [
+      {
+        "id": 1,
+        "name": "Lena",
+        "attributes": ["nieuwsgierig", "moedig"],
+        "readingLevel": "gemiddeld",
+        "group": 1
+      },
+      {
+        "id": 2,
+        "name": "Tobias",
+        "attributes": ["grappig", "slim"],
+        "readingLevel": "gemiddeld",
+        "group": 1
+      }
+    ],
+    "location": "een oud kasteel in de bergen",
+    "theme": "avontuur en mysterie",
+    "previousAct": "Lena en Tobias ontdekten een verborgen deur achter een boekenkast...",
+    "actNumber": 2
+  }
+}
